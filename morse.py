@@ -1,7 +1,7 @@
 import tkinter as tk
 from tkinter import messagebox
 
-MORSE_RUS = {         #Словарь с кириллицы на морзе
+MORSE_RUS = {         # Словарь с кириллицы на морзе
     'А': '.-',
     'Б': '-...',
     'В': '.--',
@@ -35,3 +35,28 @@ MORSE_RUS = {         #Словарь с кириллицы на морзе
     'Ю': '..--',
     'Я': '.-.-',
 }
+
+MORSE_RUS_REVERSE = {v: k for k, v in MORSE_RUS.items()}  # Словарь с морзе на кириллицу
+
+def to_morse(text):  # Функция для перевода текста в морзе
+
+def from_morse(morse_code): # Функция для перевода морзе в текст      
+
+
+
+while True:
+    print("1. Русский → Морзе")
+    print("2. Морзе → Русский")
+    print("3. Выход")
+    choice = input("Выбор: ")
+    
+    if choice == '1':
+        text = input("Текст: ")
+        print(to_morse(text))
+    elif choice == '2':
+        code = input("Код: ")
+        print(from_morse(code))
+    elif choice == '3':
+        break
+    else:
+        print("Неверный выбор.")
