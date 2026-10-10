@@ -1,4 +1,4 @@
-import tkinter as tk
+import tkinter as tk    # TODO: Сделать графический интерфейс
 from tkinter import messagebox
 
 MORSE_RUS = {         # Словарь с кириллицы на морзе
@@ -44,7 +44,7 @@ def from_morse(morse_code): # Функция для перевода морзе 
 
 
 
-while True:
+while True: # Вывод меню и обработка выбора пользователя
     print("1. Русский → Морзе")
     print("2. Морзе → Русский")
     print("3. Выход")
@@ -60,3 +60,7 @@ while True:
         break
     else:
         print("Неверный выбор.")
+# TODO:
+# - добавить английский
+# - сделать GUI
+# - написать тесты
